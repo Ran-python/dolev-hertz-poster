@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dolev Hertz - Live at Parker Bar">
+    <title>Dolev Hertz Live | Parker Bar</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        /* Full-Screen Background Container */
+        .poster {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh; /* Full viewport height */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background Image */
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/rRiqu9G.jpg') no-repeat center center;
+            background-size: contain; /* Ensures the image fits properly */
+            z-index: 0;
+        }
+
+        /* Title Section */
+        .poster h1 {
+            font-size: 3rem; /* Smaller font size */
+            font-weight: bold;
+            color: #ff0080;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 5%; /* Adjusted position */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Event Details */
+        .poster .details {
+            font-size: 1.2rem;
+            color: #ffcc00;
+            margin-top: 18%; /* Position below the title */
+            z-index: 1;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Ticket Button */
+        .poster .cta-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 30px;
+            background: #ff0080;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(255, 0, 128, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .poster .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(255, 0, 128, 0.8);
+        }
+
+        /* Social Links */
+        .poster .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 5px; /* Reduced spacing */
+            margin-top: 15px;
+            z-index: 1;
+        }
+
+        .poster .social-links a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 0.8rem; /* Smaller font size for socials */
+            padding: 5px 12px; /* Compact padding for better fit */
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .poster .social-links a:hover {
+            background: #ff0080;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .poster h1 {
+                font-size: 2.5rem;
+            }
+            .poster .details {
+                font-size: 1rem;
+            }
+            .poster .cta-button {
+                font-size: 0.9rem;
+                padding: 8px 20px;
+            }
+            .poster .social-links a {
+                font-size: 0.7rem;
+                padding: 4px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <!-- Title Section -->
+        <h1>Dolev Hertz</h1>
+        
+        <!-- Event Details -->
+        <div class="details">
+            <p>Parker Live</p>
+            <p>Saturday, 7.12.2024</p>
+            <p>Show Starts at 19:00</p>
+        </div>
+
+        <!-- Buy Tickets Button -->
+        <a href="https://ontopo.com/he/il/page/93670382?fbclid=PAZXh0bgNhZW0CMTEAAaYFjk0UaxRY9mw-Vn45_GW9Kqn10Oq54KvBTub4V8z2-XGvsus0Say-ZI8_aem__kVIHIC4rVN5lkR1RLQa9g" 
+           class="cta-button">Buy Tickets</a>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/dolevhertz?igsh=MWN6NXMxMXA5Y3ZnZA==" target="_blank">Instagram</a>
+            <a href="https://music.apple.com/il/artist/%D7%93%D7%95%D7%9C%D7%91-%D7%94%D7%A8%D7%A5/1634536850" target="_blank">Apple Music</a>
+            <a href="https://youtube.com/@dolevhertz-5369?si=Hd1E9Nri2p0NWC_1" target="_blank">YouTube</a>
+            <a href="https://open.spotify.com/artist/4NW06oIoYc7IYuFH5vZgmo?si=hCwDBghSSuW1fQPyQgf35w" target="_blank">Spotify</a>
+        </div>echo 
+    </div>
+</body>
+</html>
